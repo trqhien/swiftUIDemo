@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */; };
 		211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505922CF1E4100A643A5 /* AppDelegate.swift */; };
 		211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505B22CF1E4100A643A5 /* SceneDelegate.swift */; };
 		211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505D22CF1E4100A643A5 /* ContentView.swift */; };
@@ -14,6 +15,8 @@
 		211C506322CF1E4300A643A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C506222CF1E4300A643A5 /* Preview Assets.xcassets */; };
 		211C506622CF1E4300A643A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211C506422CF1E4300A643A5 /* LaunchScreen.storyboard */; };
 		211C507122CF1E4300A643A5 /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C507022CF1E4300A643A5 /* SwiftUIDemoTests.swift */; };
+		21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1225822D2EF1D0004D8EE /* CardView.swift */; };
+		21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1225922D2EF1D0004D8EE /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
 		211C505622CF1E4100A643A5 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C505922CF1E4100A643A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		211C505B22CF1E4100A643A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		211C506C22CF1E4300A643A5 /* SwiftUIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C507022CF1E4300A643A5 /* SwiftUIDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoTests.swift; sourceTree = "<group>"; };
 		211C507222CF1E4300A643A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F1225822D2EF1D0004D8EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		21F1225922D2EF1D0004D8EE /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2111A5C322D2F54200E85D5E /* Extensions+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */,
+			);
+			path = "Extensions+Utils";
+			sourceTree = "<group>";
+		};
 		211C504D22CF1E4100A643A5 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +93,8 @@
 		211C505822CF1E4100A643A5 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2111A5C322D2F54200E85D5E /* Extensions+Utils */,
+				21F1225722D2EF1D0004D8EE /* LandingView */,
 				211C505922CF1E4100A643A5 /* AppDelegate.swift */,
 				211C505B22CF1E4100A643A5 /* SceneDelegate.swift */,
 				211C505D22CF1E4100A643A5 /* ContentView.swift */,
@@ -105,6 +121,15 @@
 				211C507222CF1E4300A643A5 /* Info.plist */,
 			);
 			path = SwiftUIDemoTests;
+			sourceTree = "<group>";
+		};
+		21F1225722D2EF1D0004D8EE /* LandingView */ = {
+			isa = PBXGroup;
+			children = (
+				21F1225822D2EF1D0004D8EE /* CardView.swift */,
+				21F1225922D2EF1D0004D8EE /* LandingView.swift */,
+			);
+			path = LandingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */,
+				2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */,
+				21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */,
 				211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */,
+				21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */,
 				211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
