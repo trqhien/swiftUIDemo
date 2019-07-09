@@ -9,43 +9,49 @@
 import SwiftUI
 
 struct LandingView : View {
-//    @State var show = false
-//    @State var showCertificates = false
-//    @State var viewState = CGSize.zero
-//    var menu: [Menu] = menuData
+	
+    private let topics = [
+		Topic(id: "1.1", title: "Views Hierarchy", tag: "Views & Modifiers", image: "bus-stop", color: "mango"),
+		Topic(id: "2.1", title: "@State", tag: "Data Bindings", image: "ladybug", color: "eggplant"),
+		Topic(id: "2.2", title: "BindableObject", tag: "Data Bindings", image: "workflow", color: "potato"),
+	]
 
     var body: some View {
-		Text("Hello")
-//        ZStack {
-//
-//            HomeList(courses: coursesData).padding(.top, 78)
-//                .blur(radius: show ? 50 : 0)
-//                .scaleEffect(showCertificates ? 0.95 : 1)
-//                .animation(.default)
-//
-//            MenuButton(show: $show)
-//
-//            MenuRight(showCertificates: $showCertificates)
-//
-//            MenuView(menu: menu)
-//                .rotation3DEffect(Angle(degrees: show ? 0 : 60), axis: (x: 0, y: 10.0, z: 0))
-//                .animation(.basic(duration: 0.3, curve: .easeInOut))
-//                .offset(x: show ? 0 : -UIScreen.main.bounds.width)
-//                .tapAction {
-//                    self.show.toggle()
-//            }
-//
-//            ContentView()
-//                .cornerRadius(30)
-//                .shadow(color: Color("buttonShadow"), radius: 50, x: 0, y: 0)
-//                .offset(y: showCertificates ? 0 : screen.height + 100)
-//                .rotationEffect(Angle(degrees: showCertificates ? 0 : -20))
-//                .animation(.basic(duration: 0.3, curve: .easeInOut))
-//                .tapAction {
-//                    self.showCertificates.toggle()
-//            }
-//            }
-//            .edgesIgnoringSafeArea(.all)
+		NavigationView {
+			ScrollView(alwaysBounceHorizontal: false) {
+				ScrollView(showsHorizontalIndicator: false) {
+					HStack(spacing: 30) {
+						ForEach(topics) { topic in
+							CardView(topic: topic)
+						}
+					}
+						.padding(20)
+				}
+					.frame(width: UIScreen.main.bounds.width, height: 340)
+				
+				ScrollView(showsHorizontalIndicator: false) {
+					HStack(spacing: 30) {
+						ForEach(topics) { topic in
+							CardView(topic: topic)
+						}
+						}
+						.padding(20)
+					}
+					.frame(width: UIScreen.main.bounds.width, height: 340)
+				
+				ScrollView(showsHorizontalIndicator: false) {
+					HStack(spacing: 30) {
+						ForEach(topics) { topic in
+							CardView(topic: topic)
+						}
+						}
+						.padding(20)
+					}
+					.frame(width: UIScreen.main.bounds.width, height: 340)
+				
+			}.navigationBarTitle(Text("SwiftUI Demo ✌🏼"))
+			
+		}
     }
 }
 
@@ -56,3 +62,11 @@ struct LandingView_Previews : PreviewProvider {
     }
 }
 #endif
+
+struct Topic: Identifiable {
+	var id: String
+	let title: String
+	let tag: String
+	let image: String
+	let color: String
+}

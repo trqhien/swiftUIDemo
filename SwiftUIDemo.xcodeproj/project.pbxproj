@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2109D59822D485BA0037508B /* Assets.xcassets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2109D59722D485BA0037508B /* Assets.xcassets.xcassets */; };
 		2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */; };
 		211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505922CF1E4100A643A5 /* AppDelegate.swift */; };
 		211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505B22CF1E4100A643A5 /* SceneDelegate.swift */; };
 		211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505D22CF1E4100A643A5 /* ContentView.swift */; };
-		211C506022CF1E4300A643A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C505F22CF1E4300A643A5 /* Assets.xcassets */; };
 		211C506322CF1E4300A643A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C506222CF1E4300A643A5 /* Preview Assets.xcassets */; };
 		211C506622CF1E4300A643A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211C506422CF1E4300A643A5 /* LaunchScreen.storyboard */; };
 		211C507122CF1E4300A643A5 /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C507022CF1E4300A643A5 /* SwiftUIDemoTests.swift */; };
@@ -30,12 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2109D59722D485BA0037508B /* Assets.xcassets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets.xcassets; sourceTree = "<group>"; };
 		2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
 		211C505622CF1E4100A643A5 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C505922CF1E4100A643A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		211C505B22CF1E4100A643A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		211C505D22CF1E4100A643A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		211C505F22CF1E4300A643A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211C506222CF1E4300A643A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		211C506522CF1E4300A643A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211C506722CF1E4300A643A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,9 +98,9 @@
 				211C505922CF1E4100A643A5 /* AppDelegate.swift */,
 				211C505B22CF1E4100A643A5 /* SceneDelegate.swift */,
 				211C505D22CF1E4100A643A5 /* ContentView.swift */,
-				211C505F22CF1E4300A643A5 /* Assets.xcassets */,
 				211C506422CF1E4300A643A5 /* LaunchScreen.storyboard */,
 				211C506722CF1E4300A643A5 /* Info.plist */,
+				2109D59722D485BA0037508B /* Assets.xcassets.xcassets */,
 				211C506122CF1E4300A643A5 /* Preview Content */,
 			);
 			path = SwiftUIDemo;
@@ -214,8 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				211C506622CF1E4300A643A5 /* LaunchScreen.storyboard in Resources */,
+				2109D59822D485BA0037508B /* Assets.xcassets.xcassets in Resources */,
 				211C506322CF1E4300A643A5 /* Preview Assets.xcassets in Resources */,
-				211C506022CF1E4300A643A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
