@@ -37,8 +37,6 @@ struct ContentView1: View {
 struct ContentView: View {
 	@ObjectBinding var style = Style()
 	
-	@State var cr: Double = 8
-	
 	var body: some View {
 		VStack(alignment: .center) {
 			Text("🤘🏽Hello World🤘🏽")
@@ -58,7 +56,7 @@ struct ContentView: View {
 			}
 			
 			Stepper(value: $style.cornerRadius, in: 5...35, step: 5) {
-				Text("Corner Radius: \(style.cornerRadius, specifier: "%g")")
+				Text("Corner Radius: \(style.isCornerRadiusEnable ? style.cornerRadius : 0, specifier: "%g")")
 					.font(.headline)
 			}
 				.disabled(!style.isCornerRadiusEnable)
