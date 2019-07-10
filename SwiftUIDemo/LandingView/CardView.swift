@@ -18,11 +18,12 @@ struct CardView : View {
 				VStack(alignment: .leading) {
 					Text(topic.tag)
 						.font(.subheadline)
-//						.foregroundColor(Color.oceanBlue)
+						.foregroundColor(Color.oceanBlue)
 					
 					Text(topic.title)
 						.font(.title)
 						.fontWeight(.bold)
+						.color(.primary)
 					}
 						.padding()
 				
@@ -32,6 +33,7 @@ struct CardView : View {
 			
 			Image(topic.image)
 				.resizable()
+				.renderingMode(.original)
 				.aspectRatio(4/3, contentMode: .fill)
 				.frame(width: 260)
 		}

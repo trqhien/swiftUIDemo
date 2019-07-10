@@ -8,60 +8,21 @@
 
 import SwiftUI
 
-struct ContentView1: View {
-	@ObjectBinding var style = Style()
-	
-    var body: some View {
-		VStack(alignment: .center, spacing: 100) {
-			Text("🤘🏽Hello World🤘🏽")
-				.font(.title)
-				.fontWeight(.bold)
-				.padding()
-				.background(style.backgrounColor)
-				.animation(Animation.basic(duration: 0.4, curve: .easeInOut))
-			
-			Button(action: { self.style.randomizeEverything() }) {
-				Text("Change Color")
-					.font(.title)
-					.fontWeight(.bold)
-					.color(.white)
-					.padding()
-					.background(Color.lightWatermelon)
-					.cornerRadius(10)
-			}
-		}
-			.frame(width: 300, height: 400)
-    }
-}
+let topics = [
+	Topic(id: "2.1", title: "Trumpet", tag: "Musical", image: "trumpet", color: "ink"),
+	Topic(id: "2.2", title: "Rubik", tag: "3D Combination Puzzle", image: "rubik", color: "strawberrySmoothie"),
+	Topic(id: "2.3", title: "Work Overtime", tag: "Lifestyle", image: "work-overtime", color: "ink"),
+]
 
 struct ContentView: View {
 	@ObjectBinding var style = Style()
 	
 	var body: some View {
-		VStack(alignment: .center) {
-			Text("🤘🏽Hello World🤘🏽")
-				.font(.title)
-				.fontWeight(.bold)
-				.padding()
-				.background(Color.spotify)
-				.cornerRadius(style.isCornerRadiusEnable ? style.cornerRadius : 0)
-				.animation(.basic(duration: 0.3, curve: .easeInOut))
-			
-			Spacer()
-				.frame(height: 100)
-			
-			Toggle(isOn: $style.isCornerRadiusEnable) {
-				Text("Enable Corner Radius")
-					.font(.headline)
+		VStack {
+			ForEach(topics.identified(by: \.id)) { topic in
+				TopicDetailCell(topic: topic)
 			}
-			
-			Stepper(value: $style.cornerRadius, in: 5...35, step: 5) {
-				Text("Corner Radius: \(style.isCornerRadiusEnable ? style.cornerRadius : 0, specifier: "%g")")
-					.font(.headline)
-			}
-				.disabled(!style.isCornerRadiusEnable)
 		}
-			.frame(width: 300, height: 400)
 	}
 }
 

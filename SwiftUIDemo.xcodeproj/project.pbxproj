@@ -21,6 +21,8 @@
 		211C507122CF1E4300A643A5 /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C507022CF1E4300A643A5 /* SwiftUIDemoTests.swift */; };
 		2170E63D22D5E5FB00B6D567 /* RubikCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E63C22D5E5FB00B6D567 /* RubikCubeView.swift */; };
 		2170E63F22D5E64700B6D567 /* RubikCubeWithBordersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */; };
+		2170E64122D5E8C300B6D567 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */; };
+		2170E64322D622B500B6D567 /* FancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64222D622B400B6D567 /* FancyCardView.swift */; };
 		21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1225822D2EF1D0004D8EE /* CardView.swift */; };
 		21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1225922D2EF1D0004D8EE /* LandingView.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		211C507222CF1E4300A643A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2170E63C22D5E5FB00B6D567 /* RubikCubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubikCubeView.swift; sourceTree = "<group>"; };
 		2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubikCubeWithBordersView.swift; sourceTree = "<group>"; };
+		2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
+		2170E64222D622B400B6D567 /* FancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCardView.swift; sourceTree = "<group>"; };
 		21F1225822D2EF1D0004D8EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		21F1225922D2EF1D0004D8EE /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +158,8 @@
 			children = (
 				21F1225822D2EF1D0004D8EE /* CardView.swift */,
 				21F1225922D2EF1D0004D8EE /* LandingView.swift */,
+				2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */,
+				2170E64222D622B400B6D567 /* FancyCardView.swift */,
 			);
 			path = LandingView;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 				2170E63F22D5E64700B6D567 /* RubikCubeWithBordersView.swift in Sources */,
 				211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */,
 				2109D59A22D4D57D0037508B /* StateDemonstrationView.swift in Sources */,
+				2170E64322D622B500B6D567 /* FancyCardView.swift in Sources */,
+				2170E64122D5E8C300B6D567 /* TopicDetailCell.swift in Sources */,
 				2109D59C22D4D59C0037508B /* BindableObjectDemonstrationView.swift in Sources */,
 				2170E63D22D5E5FB00B6D567 /* RubikCubeView.swift in Sources */,
 				2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */,
