@@ -18,7 +18,7 @@ struct CardView : View {
 				VStack(alignment: .leading) {
 					Text(topic.tag)
 						.font(.subheadline)
-						.foregroundColor(Color.oceanBlue)
+//						.foregroundColor(Color.oceanBlue)
 					
 					Text(topic.title)
 						.font(.title)
@@ -58,6 +58,12 @@ struct CardView_Previews : PreviewProvider {
 								  tag: "Cool Stuff",
 								  image: "ladybug",
 								  color: "eggplant"))
+			
+			CardView(topic: Topic(id: "4.1",
+								  title: "Layout",
+								  tag: "Graphic Effects",
+								  image: "robot",
+								  color: "purpleSweetPotato"))
 			
 		}
     }

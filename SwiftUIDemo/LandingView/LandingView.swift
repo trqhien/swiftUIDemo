@@ -13,6 +13,7 @@ struct LandingView : View {
 	let viewHierachyTopic = Topic(id: "1.1", title: "Views Hierarchy", tag: "Views & Modifiers", image: "bus-stop", color: "mango")
 	let stateTopic = Topic(id: "2.1", title: "@State", tag: "Data Bindings", image: "ladybug", color: "eggplant")
 	let bindableObjectTopic = Topic(id: "2.2", title: "BindableObject", tag: "Data Bindings", image: "workflow", color: "potato")
+	let layoutDemonstrationTopic = Topic(id: "4.1", title: "Layout", tag: "Graphic Effects", image: "robot", color: "purpleSweetPotato")
 	
 	let destination = DynamicNavigationDestinationLink(id: \Topic.id) { _ in
 		BindableObjectDemonstrationView()
@@ -33,6 +34,10 @@ struct LandingView : View {
 						
 						NavigationButton(destination: destination, presenting: bindableObjectTopic) {
 							CardView(topic: bindableObjectTopic)
+						}
+						
+						NavigationButton(destination: RubikCubeWithBordersView()) {
+							CardView(topic: layoutDemonstrationTopic)
 						}
 					}
 //						.accentColor(Color.red)

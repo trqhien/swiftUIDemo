@@ -14,6 +14,8 @@ extension Color {
 	static let lightWatermelon = Color("lightWatermelon")
 	static let spotify = Color("spotify")
 	static let mango = Color("mango")
+	static let banana = Color("banana")
+	static let strawberrySmoothie = Color("strawberrySmoothie")
 }
 
 extension Color {
