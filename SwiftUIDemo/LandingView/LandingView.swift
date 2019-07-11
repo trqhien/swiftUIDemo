@@ -14,8 +14,9 @@ struct LandingView : View {
 	let stateTopic = Topic(id: "1.2", title: "@State", tag: "Data Bindings", image: "ladybug", color: "eggplant")
 	let bindableObjectTopic = Topic(id: "1.3", title: "BindableObject", tag: "Data Bindings", image: "workflow", color: "potato")
 	let layoutDemonstrationTopic = Topic(id: "1.4", title: "Layout", tag: "Graphic Effects", image: "robot", color: "purpleSweetPotato")
+	let navigationDemonstrationTopic = Topic(id: "1.5", title: "Navigation", tag: "Navigation", image: "biker", color: "cement")
 	
-	let destination = DynamicNavigationDestinationLink(id: \Topic.id) { _ in
+	let destination = DynamicNavigationDestinationLink(id: \Topic.id, isDetail: true) { _ in
 		BindableObjectDemonstrationView()
 	}
 	
@@ -51,6 +52,10 @@ struct LandingView : View {
 						NavigationButton(destination: RubikCubeWithBordersView()) {
 							CardView(topic: layoutDemonstrationTopic)
 						}
+						
+						NavigationButton(destination: IllustrationListView()) {
+							CardView(topic: navigationDemonstrationTopic)
+						}
 					}
 						.padding(.leading, 20).padding(.trailing, 20)
 				}
@@ -67,7 +72,6 @@ struct LandingView : View {
 					.padding(.bottom, 20)
 			}
 				.navigationBarTitle(Text("SwiftUI Demo ✌🏼"))
-			
 		}
     }
 }
@@ -79,29 +83,3 @@ struct LandingView_Previews : PreviewProvider {
     }
 }
 #endif
-
-struct Topic: Identifiable {
-	var id: String
-	let title: String
-	let tag: String
-	let image: String
-	let color: String
-}
-
-extension Topic: Hashable {
-	static func ==(lhs: Topic, rhs: Topic) -> Bool {
-		return lhs.id == rhs.id
-			&& lhs.title == rhs.title
-			&& lhs.tag == rhs.tag
-			&& lhs.image == rhs.image
-			&& lhs.color == rhs.color
-	}
-	
-	func hash(into hasher: inout Hasher) {
-		hasher.combine(id)
-		hasher.combine(title)
-		hasher.combine(tag)
-		hasher.combine(image)
-		hasher.combine(color)
-	}
-}

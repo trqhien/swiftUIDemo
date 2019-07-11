@@ -11,10 +11,38 @@ import SwiftUI
 struct UnderConstructionView : View {
     var body: some View {
 		VStack {
-			Image("fire-hydrant-icon")
-			Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+			Image("under-construction")
+				.resizable()
+				.aspectRatio(1, contentMode: .fill)
+				.frame(width: 300, height: 300)
+			Text("🚧 This screen is under construction! 🚧")
+				.font(.system(size: 18))
+				.fontWeight(.bold)
 		}
     }
+}
+let stateTopic = Topic(id: "1.2", title: "@State", tag: "Data Bindings", image: "ladybug", color: "eggplant")
+
+struct SomeViewConformingToViewProtocol: View {
+	var body: some View {
+		VStack {
+//			Image("fire-hydrant-icon")
+//				.resizable()
+//				.aspectRatio(1, contentMode: .fill)
+//				.frame(width: 80, height: 80)
+//				.border(Color.black, width: 1)
+			
+			Text("Hello from SwiftUI!")
+				.font(.largeTitle)
+				.fontWeight(.heavy)
+			
+//			NavigationButton(destination: StateDemonstrationView()) {
+//				CardView(topic: stateTopic)
+//			}
+			
+			
+		}
+	}
 }
 
 #if DEBUG

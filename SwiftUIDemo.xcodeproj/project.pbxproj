@@ -23,6 +23,13 @@
 		2170E63F22D5E64700B6D567 /* RubikCubeWithBordersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */; };
 		2170E64122D5E8C300B6D567 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */; };
 		2170E64322D622B500B6D567 /* FancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64222D622B400B6D567 /* FancyCardView.swift */; };
+		21718C4822D64E2300D4899F /* IllustrationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21718C4722D64E2300D4899F /* IllustrationListView.swift */; };
+		21847D1922D714FC00008A23 /* IllustrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1822D714FC00008A23 /* IllustrationCell.swift */; };
+		21847D1B22D7157100008A23 /* Illustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1A22D7157100008A23 /* Illustration.swift */; };
+		21847D1D22D715C000008A23 /* IllustrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1C22D715C000008A23 /* IllustrationView.swift */; };
+		21847D1F22D7167300008A23 /* IllustrationListDynamicLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1E22D7167300008A23 /* IllustrationListDynamicLinkView.swift */; };
+		21847D2122D717BE00008A23 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D2022D717BE00008A23 /* Topic.swift */; };
+		21A7CC8D22D6F2A3009EDD5E /* BasicNavigationDemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A7CC8C22D6F2A3009EDD5E /* BasicNavigationDemonstrationView.swift */; };
 		21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1225822D2EF1D0004D8EE /* CardView.swift */; };
 		21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F1225922D2EF1D0004D8EE /* LandingView.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +65,12 @@
 		2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubikCubeWithBordersView.swift; sourceTree = "<group>"; };
 		2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
 		2170E64222D622B400B6D567 /* FancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCardView.swift; sourceTree = "<group>"; };
+		21718C4722D64E2300D4899F /* IllustrationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationListView.swift; sourceTree = "<group>"; };
+		21847D1822D714FC00008A23 /* IllustrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationCell.swift; sourceTree = "<group>"; };
+		21847D1A22D7157100008A23 /* Illustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustration.swift; sourceTree = "<group>"; };
+		21847D1C22D715C000008A23 /* IllustrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationView.swift; sourceTree = "<group>"; };
+		21847D1E22D7167300008A23 /* IllustrationListDynamicLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationListDynamicLinkView.swift; sourceTree = "<group>"; };
+		21A7CC8C22D6F2A3009EDD5E /* BasicNavigationDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNavigationDemonstrationView.swift; sourceTree = "<group>"; };
 		21F1225822D2EF1D0004D8EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		21F1225922D2EF1D0004D8EE /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,12 +96,14 @@
 		2109D59D22D4D6D10037508B /* DesmonstrationViews */ = {
 			isa = PBXGroup;
 			children = (
+				21718C4622D64DFF00D4899F /* New Group */,
 				2109D59922D4D57D0037508B /* StateDemonstrationView.swift */,
 				2109D59B22D4D59C0037508B /* BindableObjectDemonstrationView.swift */,
 				2109D5A122D4D8750037508B /* ViewHierachyDemonstrationView.swift */,
 				2109D5A322D506590037508B /* UnderConstructionView.swift */,
 				2170E63C22D5E5FB00B6D567 /* RubikCubeView.swift */,
 				2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */,
+				21A7CC8C22D6F2A3009EDD5E /* BasicNavigationDemonstrationView.swift */,
 			);
 			path = DesmonstrationViews;
 			sourceTree = "<group>";
@@ -151,6 +166,18 @@
 				211C507222CF1E4300A643A5 /* Info.plist */,
 			);
 			path = SwiftUIDemoTests;
+			sourceTree = "<group>";
+		};
+		21718C4622D64DFF00D4899F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				21718C4722D64E2300D4899F /* IllustrationListView.swift */,
+				21847D1822D714FC00008A23 /* IllustrationCell.swift */,
+				21847D1A22D7157100008A23 /* Illustration.swift */,
+				21847D1C22D715C000008A23 /* IllustrationView.swift */,
+				21847D1E22D7167300008A23 /* IllustrationListDynamicLinkView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		21F1225722D2EF1D0004D8EE /* LandingView */ = {
@@ -265,16 +292,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21847D1F22D7167300008A23 /* IllustrationListDynamicLinkView.swift in Sources */,
 				2109D5A222D4D8750037508B /* ViewHierachyDemonstrationView.swift in Sources */,
 				2170E63F22D5E64700B6D567 /* RubikCubeWithBordersView.swift in Sources */,
 				211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */,
+				21847D1D22D715C000008A23 /* IllustrationView.swift in Sources */,
 				2109D59A22D4D57D0037508B /* StateDemonstrationView.swift in Sources */,
+				21718C4822D64E2300D4899F /* IllustrationListView.swift in Sources */,
+				21A7CC8D22D6F2A3009EDD5E /* BasicNavigationDemonstrationView.swift in Sources */,
 				2170E64322D622B500B6D567 /* FancyCardView.swift in Sources */,
 				2170E64122D5E8C300B6D567 /* TopicDetailCell.swift in Sources */,
+				21847D1922D714FC00008A23 /* IllustrationCell.swift in Sources */,
 				2109D59C22D4D59C0037508B /* BindableObjectDemonstrationView.swift in Sources */,
 				2170E63D22D5E5FB00B6D567 /* RubikCubeView.swift in Sources */,
 				2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */,
 				21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */,
+				21847D1B22D7157100008A23 /* Illustration.swift in Sources */,
 				211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */,
 				21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */,
 				211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */,
