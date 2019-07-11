@@ -15,3 +15,21 @@ struct Illustration: Identifiable {
 	let title: String
 	let intro: String
 }
+
+extension Illustration: Hashable {
+	static func ==(lhs: Illustration, rhs: Illustration) -> Bool {
+		return lhs.id == rhs.id
+			&& lhs.title == rhs.title
+			&& lhs.thumbnail == rhs.thumbnail
+			&& lhs.image == rhs.image
+			&& lhs.intro == rhs.intro
+	}
+	
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+		hasher.combine(title)
+		hasher.combine(thumbnail)
+		hasher.combine(image)
+		hasher.combine(intro)
+	}
+}

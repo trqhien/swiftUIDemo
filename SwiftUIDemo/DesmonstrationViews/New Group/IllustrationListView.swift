@@ -24,11 +24,9 @@ struct IllustrationListView : View {
     var body: some View {
 		List {
 			ForEach(illustrations.identified(by: \.id)) { illustration in
-				
 				NavigationButton(destination: IllustrationView(image: illustration.image)) {
 					IllustrationCell(illustration: illustration)
 				}
-				
 			}
 		}.navigationBarTitle(Text("Illustrations"))
 	}

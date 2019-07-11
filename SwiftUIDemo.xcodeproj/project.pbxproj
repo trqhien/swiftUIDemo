@@ -70,6 +70,7 @@
 		21847D1A22D7157100008A23 /* Illustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustration.swift; sourceTree = "<group>"; };
 		21847D1C22D715C000008A23 /* IllustrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationView.swift; sourceTree = "<group>"; };
 		21847D1E22D7167300008A23 /* IllustrationListDynamicLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationListDynamicLinkView.swift; sourceTree = "<group>"; };
+		21847D2022D717BE00008A23 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		21A7CC8C22D6F2A3009EDD5E /* BasicNavigationDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNavigationDemonstrationView.swift; sourceTree = "<group>"; };
 		21F1225822D2EF1D0004D8EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		21F1225922D2EF1D0004D8EE /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 				21F1225922D2EF1D0004D8EE /* LandingView.swift */,
 				2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */,
 				2170E64222D622B400B6D567 /* FancyCardView.swift */,
+				21847D2022D717BE00008A23 /* Topic.swift */,
 			);
 			path = LandingView;
 			sourceTree = "<group>";
@@ -305,6 +307,7 @@
 				21847D1922D714FC00008A23 /* IllustrationCell.swift in Sources */,
 				2109D59C22D4D59C0037508B /* BindableObjectDemonstrationView.swift in Sources */,
 				2170E63D22D5E5FB00B6D567 /* RubikCubeView.swift in Sources */,
+				21847D2122D717BE00008A23 /* Topic.swift in Sources */,
 				2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */,
 				21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */,
 				21847D1B22D7157100008A23 /* Illustration.swift in Sources */,
