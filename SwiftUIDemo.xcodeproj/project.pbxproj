@@ -24,6 +24,8 @@
 		2170E64122D5E8C300B6D567 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */; };
 		2170E64322D622B500B6D567 /* FancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64222D622B400B6D567 /* FancyCardView.swift */; };
 		21718C4822D64E2300D4899F /* IllustrationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21718C4722D64E2300D4899F /* IllustrationListView.swift */; };
+		21798A1922D89103007639BA /* ForwardCompatibilityDemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21798A1822D89103007639BA /* ForwardCompatibilityDemonstrationView.swift */; };
+		21798A1C22D8F568007639BA /* MyUIKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21798A1B22D8F568007639BA /* MyUIKitViewRepresentable.swift */; };
 		21847D1922D714FC00008A23 /* IllustrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1822D714FC00008A23 /* IllustrationCell.swift */; };
 		21847D1B22D7157100008A23 /* Illustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1A22D7157100008A23 /* Illustration.swift */; };
 		21847D1D22D715C000008A23 /* IllustrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1C22D715C000008A23 /* IllustrationView.swift */; };
@@ -71,6 +73,8 @@
 		2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
 		2170E64222D622B400B6D567 /* FancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCardView.swift; sourceTree = "<group>"; };
 		21718C4722D64E2300D4899F /* IllustrationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationListView.swift; sourceTree = "<group>"; };
+		21798A1822D89103007639BA /* ForwardCompatibilityDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardCompatibilityDemonstrationView.swift; sourceTree = "<group>"; };
+		21798A1B22D8F568007639BA /* MyUIKitViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUIKitViewRepresentable.swift; sourceTree = "<group>"; };
 		21847D1822D714FC00008A23 /* IllustrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationCell.swift; sourceTree = "<group>"; };
 		21847D1A22D7157100008A23 /* Illustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustration.swift; sourceTree = "<group>"; };
 		21847D1C22D715C000008A23 /* IllustrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		2109D59D22D4D6D10037508B /* DesmonstrationViews */ = {
 			isa = PBXGroup;
 			children = (
+				21798A1A22D8F486007639BA /* SwiftUIAndUIKitMixMatch */,
 				21847D2222D7243100008A23 /* EnvironmentObjectDemonstration */,
 				21718C4622D64DFF00D4899F /* NavigationDemonstration */,
 				2109D59922D4D57D0037508B /* StateDemonstrationView.swift */,
@@ -190,6 +195,15 @@
 				21847D1E22D7167300008A23 /* IllustrationListDynamicLinkView.swift */,
 			);
 			path = NavigationDemonstration;
+			sourceTree = "<group>";
+		};
+		21798A1A22D8F486007639BA /* SwiftUIAndUIKitMixMatch */ = {
+			isa = PBXGroup;
+			children = (
+				21798A1822D89103007639BA /* ForwardCompatibilityDemonstrationView.swift */,
+				21798A1B22D8F568007639BA /* MyUIKitViewRepresentable.swift */,
+			);
+			path = SwiftUIAndUIKitMixMatch;
 			sourceTree = "<group>";
 		};
 		21847D2222D7243100008A23 /* EnvironmentObjectDemonstration */ = {
@@ -337,12 +351,14 @@
 				21847D2A22D7253100008A23 /* ChooseCardImageView.swift in Sources */,
 				21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */,
 				21847D1B22D7157100008A23 /* Illustration.swift in Sources */,
+				21798A1C22D8F568007639BA /* MyUIKitViewRepresentable.swift in Sources */,
 				21847D2C22D7256E00008A23 /* CardReviewView.swift in Sources */,
 				21847D2422D724B000008A23 /* ChoseCardTitleView.swift in Sources */,
 				211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */,
 				21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */,
 				211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */,
 				2109D5A422D506590037508B /* UnderConstructionView.swift in Sources */,
+				21798A1922D89103007639BA /* ForwardCompatibilityDemonstrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
