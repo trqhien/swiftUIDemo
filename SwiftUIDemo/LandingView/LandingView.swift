@@ -15,6 +15,7 @@ struct LandingView : View {
 	let bindableObjectTopic = Topic(id: "1.3", title: "BindableObject", tag: "Data Bindings", image: "workflow", color: "potato")
 	let layoutDemonstrationTopic = Topic(id: "1.4", title: "Layout", tag: "Graphic Effects", image: "robot", color: "purpleSweetPotato")
 	let navigationDemonstrationTopic = Topic(id: "1.5", title: "Navigation", tag: "Navigation", image: "biker", color: "cement")
+	let environmentObjectTopic = Topic(id: "1.6", title: "@EnviromenrObject", tag: "Indirect Data Binding", image: "dark-sushi", color: "almostDark")
 	
 	let destination = DynamicNavigationDestinationLink(id: \Topic.id, isDetail: true) { _ in
 		BindableObjectDemonstrationView()
@@ -55,6 +56,10 @@ struct LandingView : View {
 						
 						NavigationButton(destination: IllustrationListView()) {
 							CardView(topic: navigationDemonstrationTopic)
+						}
+						
+						NavigationButton(destination: ChoseCardTitleView()) {
+							CardView(topic: environmentObjectTopic)
 						}
 					}
 						.padding(.leading, 20).padding(.trailing, 20)
