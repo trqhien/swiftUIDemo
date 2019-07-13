@@ -19,13 +19,14 @@
 		211C506322CF1E4300A643A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211C506222CF1E4300A643A5 /* Preview Assets.xcassets */; };
 		211C506622CF1E4300A643A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211C506422CF1E4300A643A5 /* LaunchScreen.storyboard */; };
 		211C507122CF1E4300A643A5 /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C507022CF1E4300A643A5 /* SwiftUIDemoTests.swift */; };
+		212B432722D9A0F900723BA5 /* MyUITableViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212B432622D9A0F900723BA5 /* MyUITableViewControllerRepresentable.swift */; };
 		2170E63D22D5E5FB00B6D567 /* RubikCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E63C22D5E5FB00B6D567 /* RubikCubeView.swift */; };
 		2170E63F22D5E64700B6D567 /* RubikCubeWithBordersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */; };
 		2170E64122D5E8C300B6D567 /* TopicDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */; };
 		2170E64322D622B500B6D567 /* FancyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170E64222D622B400B6D567 /* FancyCardView.swift */; };
 		21718C4822D64E2300D4899F /* IllustrationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21718C4722D64E2300D4899F /* IllustrationListView.swift */; };
-		21798A1922D89103007639BA /* ForwardCompatibilityDemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21798A1822D89103007639BA /* ForwardCompatibilityDemonstrationView.swift */; };
-		21798A1C22D8F568007639BA /* MyUIKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21798A1B22D8F568007639BA /* MyUIKitViewRepresentable.swift */; };
+		21798A1922D89103007639BA /* UIViewRepresentableDemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21798A1822D89103007639BA /* UIViewRepresentableDemonstrationView.swift */; };
+		21798A1C22D8F568007639BA /* MyUIViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21798A1B22D8F568007639BA /* MyUIViewRepresentable.swift */; };
 		21847D1922D714FC00008A23 /* IllustrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1822D714FC00008A23 /* IllustrationCell.swift */; };
 		21847D1B22D7157100008A23 /* Illustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1A22D7157100008A23 /* Illustration.swift */; };
 		21847D1D22D715C000008A23 /* IllustrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21847D1C22D715C000008A23 /* IllustrationView.swift */; };
@@ -68,13 +69,14 @@
 		211C506C22CF1E4300A643A5 /* SwiftUIDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C507022CF1E4300A643A5 /* SwiftUIDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoTests.swift; sourceTree = "<group>"; };
 		211C507222CF1E4300A643A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212B432622D9A0F900723BA5 /* MyUITableViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		2170E63C22D5E5FB00B6D567 /* RubikCubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubikCubeView.swift; sourceTree = "<group>"; };
 		2170E63E22D5E64700B6D567 /* RubikCubeWithBordersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubikCubeWithBordersView.swift; sourceTree = "<group>"; };
 		2170E64022D5E8C300B6D567 /* TopicDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailCell.swift; sourceTree = "<group>"; };
 		2170E64222D622B400B6D567 /* FancyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyCardView.swift; sourceTree = "<group>"; };
 		21718C4722D64E2300D4899F /* IllustrationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationListView.swift; sourceTree = "<group>"; };
-		21798A1822D89103007639BA /* ForwardCompatibilityDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardCompatibilityDemonstrationView.swift; sourceTree = "<group>"; };
-		21798A1B22D8F568007639BA /* MyUIKitViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUIKitViewRepresentable.swift; sourceTree = "<group>"; };
+		21798A1822D89103007639BA /* UIViewRepresentableDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableDemonstrationView.swift; sourceTree = "<group>"; };
+		21798A1B22D8F568007639BA /* MyUIViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUIViewRepresentable.swift; sourceTree = "<group>"; };
 		21847D1822D714FC00008A23 /* IllustrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationCell.swift; sourceTree = "<group>"; };
 		21847D1A22D7157100008A23 /* Illustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustration.swift; sourceTree = "<group>"; };
 		21847D1C22D715C000008A23 /* IllustrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationView.swift; sourceTree = "<group>"; };
@@ -200,8 +202,9 @@
 		21798A1A22D8F486007639BA /* SwiftUIAndUIKitMixMatch */ = {
 			isa = PBXGroup;
 			children = (
-				21798A1822D89103007639BA /* ForwardCompatibilityDemonstrationView.swift */,
-				21798A1B22D8F568007639BA /* MyUIKitViewRepresentable.swift */,
+				21798A1822D89103007639BA /* UIViewRepresentableDemonstrationView.swift */,
+				21798A1B22D8F568007639BA /* MyUIViewRepresentable.swift */,
+				212B432622D9A0F900723BA5 /* MyUITableViewControllerRepresentable.swift */,
 			);
 			path = SwiftUIAndUIKitMixMatch;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				21847D1F22D7167300008A23 /* IllustrationListDynamicLinkView.swift in Sources */,
 				2109D5A222D4D8750037508B /* ViewHierachyDemonstrationView.swift in Sources */,
 				2170E63F22D5E64700B6D567 /* RubikCubeWithBordersView.swift in Sources */,
+				212B432722D9A0F900723BA5 /* MyUITableViewControllerRepresentable.swift in Sources */,
 				21847D2822D7251A00008A23 /* ChoseCardTagView.swift in Sources */,
 				211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */,
 				21847D1D22D715C000008A23 /* IllustrationView.swift in Sources */,
@@ -351,14 +355,14 @@
 				21847D2A22D7253100008A23 /* ChooseCardImageView.swift in Sources */,
 				21F1225B22D2EF1D0004D8EE /* LandingView.swift in Sources */,
 				21847D1B22D7157100008A23 /* Illustration.swift in Sources */,
-				21798A1C22D8F568007639BA /* MyUIKitViewRepresentable.swift in Sources */,
+				21798A1C22D8F568007639BA /* MyUIViewRepresentable.swift in Sources */,
 				21847D2C22D7256E00008A23 /* CardReviewView.swift in Sources */,
 				21847D2422D724B000008A23 /* ChoseCardTitleView.swift in Sources */,
 				211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */,
 				21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */,
 				211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */,
 				2109D5A422D506590037508B /* UnderConstructionView.swift in Sources */,
-				21798A1922D89103007639BA /* ForwardCompatibilityDemonstrationView.swift in Sources */,
+				21798A1922D89103007639BA /* UIViewRepresentableDemonstrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ForwardCompatibilityDemonstrationView.swift
+//  UIViewRepresentableDemonstrationView.swift
 //  SwiftUIDemo
 //
 //  Created by Hien Quang Tran on 7/12/19.
@@ -9,7 +9,7 @@
 import SwiftUI
 import UIKit
 
-struct ForwardCompatibilityDemonstrationView : View {
+struct UIViewRepresentableDemonstrationView : View {
 	@State private var textInput: String = ""
 	
     var body: some View {
@@ -23,19 +23,19 @@ struct ForwardCompatibilityDemonstrationView : View {
 			
 			Spacer().frame(height: 36)
 			
-			MyUIKitViewRepresentable(textInput: $textInput)
+			MyUIViewRepresentable(textInput: $textInput)
 				.frame(height: 200)
 		}
 			.padding(50)
-			.navigationBarTitle(Text("Forward Compatibility 💈"))
+			.navigationBarTitle(Text("Forward Compatibility"))
     }
 }
 
 #if DEBUG
-struct ForwardCompatibilityDemonstrationView_Previews : PreviewProvider {
+struct UIViewRepresentableDemonstrationView_Previews : PreviewProvider {
     static var previews: some View {
 		NavigationView {
-			ForwardCompatibilityDemonstrationView()			
+			UIViewRepresentableDemonstrationView()
 		}
     }
 }

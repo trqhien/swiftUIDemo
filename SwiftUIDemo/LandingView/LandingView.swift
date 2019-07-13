@@ -63,7 +63,7 @@ struct LandingView : View {
 							CardView(topic: environmentObjectTopic)
 						}
 						
-						NavigationButton(destination: ForwardCompatibilityDemonstrationView()) {
+						NavigationButton(destination: UIViewRepresentableDemonstrationView()) {
 							CardView(topic: forwardCompatibilityTopic)
 						}
 					}
@@ -93,3 +93,7 @@ struct LandingView_Previews : PreviewProvider {
     }
 }
 #endif
+
+// TODO: - Refactor register pattern with AnyView
+// Refactor TextField
+// Finish environment object

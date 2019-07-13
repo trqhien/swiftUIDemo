@@ -1,5 +1,5 @@
 //
-//  MyUIKitViewRepresentable.swift
+//  MyUIViewRepresentable.swift
 //  SwiftUIDemo
 //
 //  Created by Hien Quang Tran on 7/13/19.
@@ -9,7 +9,7 @@
 import SwiftUI
 import UIKit
 
-struct MyUIKitViewRepresentable: UIViewRepresentable {
+struct MyUIViewRepresentable: UIViewRepresentable {
 	class Coordinator: NSObject {
 		@Binding var textInput: String
 		
@@ -34,7 +34,7 @@ struct MyUIKitViewRepresentable: UIViewRepresentable {
 		uiView.titleLabel.text = textInput
 	}
 	
-	func makeCoordinator() -> MyUIKitViewRepresentable.Coordinator {
+	func makeCoordinator() -> MyUIViewRepresentable.Coordinator {
 		return Coordinator(textInput: $textInput)
 	}
 }
