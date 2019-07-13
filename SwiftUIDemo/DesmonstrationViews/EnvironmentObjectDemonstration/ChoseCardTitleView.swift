@@ -22,7 +22,7 @@ struct ChoseCardTitleView : View {
 			
 			Text("Type something less than 8 characters")
 				.font(.subheadline)
-				.foregroundColor(.watermelon)
+				.foregroundColor(.oceanBlue)
 			
 			Spacer().frame(height: 36)
 			

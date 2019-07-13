@@ -7,19 +7,23 @@
 //
 
 import SwiftUI
+import Combine
 
 struct MyUITableViewControllerRepresentable: UIViewControllerRepresentable {
 	
-	func makeUIViewController(context: Context) -> MyTableViewController {
-		return MyTableViewController()
+	final class Coordinator: NSObject, UITableViewDelegate {
+		let parent: MyUITableViewControllerRepresentable
+		
+		init(_ parent: MyUITableViewControllerRepresentable) {
+			self.parent = parent
+		}
+		
+		func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+			tableView.deselectRow(at: indexPath, animated: true)
+			parent.selectedImage = parent.images[indexPath.row]
+		}
 	}
 	
-	func updateUIViewController(_ uiViewController: MyTableViewController, context: Context) {
-		//
-	}
-}
-
-final class MyTableViewController: UITableViewController {
 	private let images = [
 		"bus-stop",
 		"architecture",
@@ -50,13 +54,44 @@ final class MyTableViewController: UITableViewController {
 		"visit-on-mars",
 	]
 	
-	init() {
+	@Binding private(set) var selectedImage: String
+	
+	func makeUIViewController(context: Context) -> MyTableViewController {
+		let vc = MyTableViewController(images: images)
+		vc.tableView.delegate = context.coordinator
+		return vc
+	}
+	
+	func updateUIViewController(_ uiViewController: MyTableViewController, context: Context) {}
+	
+	func makeCoordinator() -> MyUITableViewControllerRepresentable.Coordinator {
+		let coordinator = Coordinator(self)
+		return coordinator
+	}
+}
+
+final class MyTableViewController: UITableViewController {
+	
+	private let images: [String]
+	
+	init(images: [String]) {
+		self.images = images
 		super.init(style: .plain)
+
 		tableView.register(PosterCell.self, forCellReuseIdentifier: "Cell")
 	}
 	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		tableView.estimatedRowHeight = 114
+		tableView.rowHeight = UITableView.automaticDimension
+		
+		tableView.register(PosterCell.self, forCellReuseIdentifier: "Cell")
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -107,20 +142,21 @@ final class PosterCell: UITableViewCell {
 			thumbnail.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor),
 			thumbnail.widthAnchor.constraint(equalToConstant: 120),
 			thumbnail.heightAnchor.constraint(equalToConstant: 90),
+			thumbnail.leftAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leftAnchor),
 			
 			nameLabel.leftAnchor.constraint(equalTo: thumbnail.rightAnchor, constant: 12),
 			nameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
 			nameLabel.rightAnchor.constraint(lessThanOrEqualTo: contentView.layoutMarginsGuide.rightAnchor)
-			])
+		])
 	}
 }
 
 #if DEBUG
-struct MyUITableViewControllerRepresentable_Previews : PreviewProvider {
-    static var previews: some View {
-		NavigationView {
-			MyUITableViewControllerRepresentable()
-		}
-    }
-}
+//struct MyUITableViewControllerRepresentable_Previews : PreviewProvider {
+//    static var previews: some View {
+//		NavigationView {
+//			MyUITableViewControllerRepresentable()
+//		}
+//    }
+//}
 #endif

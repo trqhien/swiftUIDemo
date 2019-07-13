@@ -9,9 +9,29 @@
 import SwiftUI
 
 struct ChooseCardImageView : View {
+	@State private var selectedImage: String = ""
+	
     var body: some View {
-        MyUITableViewControllerRepresentable()
-			.navigationBarTitle(Text("Chose illustration 🌌"))
+		VStack {
+			if selectedImage != "" {
+				NavigationButton(destination: CardReviewView()) {
+					HStack {
+						Image(selectedImage)
+							.resizable()
+							.renderingMode(.original)
+							.aspectRatio(4/3, contentMode: .fit)
+							.frame(width: 60)
+						
+						Text(selectedImage)
+							.fontWeight(.bold)
+							.color(.primary)
+					}
+				}
+			}
+			
+			MyUITableViewControllerRepresentable(selectedImage: $selectedImage)
+		}
+			.navigationBarTitle(Text("Choose illustration 🌌"))
     }
 }
 

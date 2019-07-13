@@ -97,3 +97,4 @@ struct LandingView_Previews : PreviewProvider {
 // TODO: - Refactor register pattern with AnyView
 // Refactor TextField
 // Finish environment object
+// Section title for LandingView
