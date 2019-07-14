@@ -59,7 +59,7 @@ struct LandingView : View {
 							CardView(topic: navigationDemonstrationTopic)
 						}
 						
-						NavigationButton(destination: ChoseCardTitleView()) {
+						NavigationButton(destination: ChooseCardTitleView().environmentObject(CardData())) {
 							CardView(topic: environmentObjectTopic)
 						}
 						
@@ -89,7 +89,11 @@ struct LandingView : View {
 #if DEBUG
 struct LandingView_Previews : PreviewProvider {
     static var previews: some View {
-        LandingView()
+		ForEach(["iPhone XS Max", "iPhone SE"].identified(by: \.self)) { deviceName in
+			LandingView()
+				.previewDevice(PreviewDevice(rawValue: deviceName))
+				.previewDisplayName(deviceName)
+		}
     }
 }
 #endif

@@ -9,13 +9,15 @@
 import SwiftUI
 
 struct CardReviewView : View {
+	
+	@EnvironmentObject private var cardData: CardData
+	
     var body: some View {
-		CardView(topic: Topic(id: "1.1",
-							  title: "Views & Modifiers",
-							  tag: "Awesome Stuff",
-							  image: "bus-stop",
-							  color: "mango"))
-//			.background(Color.strawberrySmoothie)
+		CardView(topic: Topic(id: "",
+							  title: cardData.title,
+							  tag: cardData.tag,
+							  image: cardData.image,
+							  color: cardData.color))
     }
 }
 
@@ -23,6 +25,7 @@ struct CardReviewView : View {
 struct CardReviewView_Previews : PreviewProvider {
     static var previews: some View {
         CardReviewView()
+			.environmentObject(CardData())
     }
 }
 #endif

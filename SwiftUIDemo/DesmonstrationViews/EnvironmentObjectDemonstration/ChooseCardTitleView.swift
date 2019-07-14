@@ -1,5 +1,5 @@
 //
-//  ChoseCardTitleView.swift
+//  ChooseCardTitleView.swift
 //  SwiftUIDemo
 //
 //  Created by Hien Quang Tran on 7/11/19.
@@ -8,13 +8,13 @@
 
 import SwiftUI
 
-struct ChoseCardTitleView : View {
+struct ChooseCardTitleView: View {
 	
-	@State private var textInput: String = ""
+	@EnvironmentObject private var cardData: CardData
 	
     var body: some View {
 		VStack(alignment: .leading) {
-			TextField($textInput, placeholder: Text("Enter card title"))
+			TextField($cardData.title, placeholder: Text("Enter card title"))
 			
 			Divider()
 				.frame(height: 2)
@@ -29,9 +29,10 @@ struct ChoseCardTitleView : View {
 			HStack {
 				Spacer()
 				
-				NavigationButton(destination: ChoseCardTagView()) {
+				NavigationButton(destination: ChooseCardTagView().environmentObject(self.cardData)) {
 					Image("btn-next").renderingMode(.original)
 				}
+					.disabled(cardData.title == "")
 			}
 		}
 			.padding(50)
@@ -40,11 +41,12 @@ struct ChoseCardTitleView : View {
 }
 
 #if DEBUG
-struct ChoseCardTitleView_Previews : PreviewProvider {
+struct ChooseCardTitleView_Previews : PreviewProvider {
     static var previews: some View {
 		NavigationView {
-			ChoseCardTitleView()
+			ChooseCardTitleView()
 		}
+			.environmentObject(CardData())
     }
 }
 #endif

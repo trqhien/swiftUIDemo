@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct Topic: Identifiable {
-	var id: String
+	let id: String
 	let title: String
 	let tag: String
 	let image: String

@@ -9,27 +9,28 @@
 import SwiftUI
 
 struct ChooseCardImageView : View {
-	@State private var selectedImage: String = ""
+	
+	@EnvironmentObject private var cardData: CardData
 	
     var body: some View {
 		VStack {
-			if selectedImage != "" {
-				NavigationButton(destination: CardReviewView()) {
+			if cardData.image != "" {
+				NavigationButton(destination: CardReviewView().environmentObject(self.cardData)) {
 					HStack {
-						Image(selectedImage)
+						Image(cardData.image)
 							.resizable()
 							.renderingMode(.original)
 							.aspectRatio(4/3, contentMode: .fit)
 							.frame(width: 60)
 						
-						Text(selectedImage)
+						Text(cardData.image)
 							.fontWeight(.bold)
 							.color(.primary)
 					}
 				}
 			}
 			
-			MyUITableViewControllerRepresentable(selectedImage: $selectedImage)
+			MyUITableViewControllerRepresentable(selectedImage: $cardData.image)
 		}
 			.navigationBarTitle(Text("Choose illustration 🌌"))
     }
@@ -39,8 +40,10 @@ struct ChooseCardImageView : View {
 struct ChooseCardImageView_Previews : PreviewProvider {
     static var previews: some View {
 		NavigationView {
-			ChooseCardImageView()			
+			ChooseCardImageView()
+				.environmentObject(CardData())
 		}
+		
     }
 }
 #endif

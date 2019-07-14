@@ -1,5 +1,5 @@
 //
-//  ChoseCardBackgroundView.swift
+//  ChooseCardBackgroundView.swift
 //  SwiftUIDemo
 //
 //  Created by Hien Quang Tran on 7/11/19.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ChoseCardBackgroundView : View {
+struct ChooseCardBackgroundView : View {
 	let backgroundColors = [
 		"banana",
 		"carrot",
@@ -23,17 +23,17 @@ struct ChoseCardBackgroundView : View {
 		"taro"
 	]
 	
-	@State private var selectedValue: String = ""
+	@EnvironmentObject private var cardData: CardData
 	
     var body: some View {
 		VStack {
-			if selectedValue != "" {
-				NavigationButton(destination: ChooseCardImageView()) {
-					Text(selectedValue)
+			if cardData.color != "" {
+				NavigationButton(destination: ChooseCardImageView().environmentObject(self.cardData)) {
+					Text(cardData.color)
 						.fontWeight(.bold)
 						.color(.white)
 						.padding(10)
-						.background(Color(selectedValue))
+						.background(Color(cardData.color))
 						.cornerRadius(12)
 				}
 					.animation(Animation.basic(duration: 0.3, curve: .easeInOut))
@@ -41,10 +41,9 @@ struct ChoseCardBackgroundView : View {
 			
 			List(
 				backgroundColors.identified(by: \.self),
-				selection: $selectedValue,
+				selection: $cardData.color,
 				action: { value in
-					self.selectedValue = value
-					// Update enviroment object
+					self.cardData.updateColor(value)
 				},
 				rowContent: { color in
 					HStack {
@@ -57,7 +56,7 @@ struct ChoseCardBackgroundView : View {
 							.font(.title)
 							.fontWeight(.bold)
 						
-						if self.selectedValue == color {
+						if self.cardData.color == color {
 							Spacer()
 							Text("✅")
 								.animation(Animation.basic(duration: 0.3, curve: .easeInOut))
@@ -85,10 +84,11 @@ extension String: SelectionManager {
 }
 
 #if DEBUG
-struct ChoseCardBackgroundView_Previews : PreviewProvider {
+struct ChooseCardBackgroundView_Previews : PreviewProvider {
     static var previews: some View {
 		NavigationView {
-			ChoseCardBackgroundView()
+			ChooseCardBackgroundView()
+				.environmentObject(CardData())
 		}
     }
 }
