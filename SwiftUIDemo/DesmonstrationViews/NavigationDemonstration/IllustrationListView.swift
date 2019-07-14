@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct IllustrationListView : View {
+struct IllustrationListView: View {
 	let illustrations = [
 		Illustration(id: "a", image: "apple-glass", thumbnail: "sushi", title: "Apple & Glasses", intro: "Cover illustrations for Wall Street Journal, about families buying multiple units in real estate developments."),
 		Illustration(id: "b", image: "bmw", thumbnail: "ducati", title: "Ducati Panigale V4", intro: "It is called Panigale V4 and it marks a new and important chapter in Ducati's history, a symphony of performance and emotions that's 100% Italian."),
@@ -33,7 +33,7 @@ struct IllustrationListView : View {
 }
 
 #if DEBUG
-struct IllustrationListView_Previews : PreviewProvider {
+struct IllustrationListView_Previews: PreviewProvider {
     static var previews: some View {
 		NavigationView {
         	IllustrationListView()

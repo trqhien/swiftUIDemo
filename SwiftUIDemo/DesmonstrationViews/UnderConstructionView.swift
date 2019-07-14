@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct UnderConstructionView : View {
+struct UnderConstructionView: View {
     var body: some View {
 		VStack {
 			Image("under-construction")
@@ -46,7 +46,7 @@ struct SomeViewConformingToViewProtocol: View {
 }
 
 #if DEBUG
-struct UnderConstructionView_Previews : PreviewProvider {
+struct UnderConstructionView_Previews: PreviewProvider {
     static var previews: some View {
         UnderConstructionView()
     }

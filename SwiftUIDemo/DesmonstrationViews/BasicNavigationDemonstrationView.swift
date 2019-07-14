@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct BasicNavigationDemonstrationView : View {
+struct BasicNavigationDemonstrationView: View {
     var body: some View {
 		NavigationView {
 			NavigationButton(destination: SomeViewConformingToViewProtocol()) {
@@ -20,7 +20,7 @@ struct BasicNavigationDemonstrationView : View {
 }
 
 #if DEBUG
-struct BasicNavigationDemonstrationView_Previews : PreviewProvider {
+struct BasicNavigationDemonstrationView_Previews: PreviewProvider {
     static var previews: some View {
         BasicNavigationDemonstrationView()
     }

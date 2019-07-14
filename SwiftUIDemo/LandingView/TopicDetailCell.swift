@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TopicDetailCell : View {
+struct TopicDetailCell: View {
 	let topic: Topic
 	
     var body: some View {
@@ -35,7 +35,7 @@ struct TopicDetailCell : View {
 }
 
 #if DEBUG
-struct TopicDetailCell_Previews : PreviewProvider {
+struct TopicDetailCell_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
 			TopicDetailCell(topic: Topic(id: "1.1",

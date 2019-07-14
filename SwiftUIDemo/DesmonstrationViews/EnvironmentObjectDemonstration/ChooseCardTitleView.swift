@@ -41,7 +41,7 @@ struct ChooseCardTitleView: View {
 }
 
 #if DEBUG
-struct ChooseCardTitleView_Previews : PreviewProvider {
+struct ChooseCardTitleView_Previews: PreviewProvider {
     static var previews: some View {
 		NavigationView {
 			ChooseCardTitleView()

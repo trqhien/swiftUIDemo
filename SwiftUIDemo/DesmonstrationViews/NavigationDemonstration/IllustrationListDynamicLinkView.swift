@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct IllustrationListDynamicLinkView : View {
+struct IllustrationListDynamicLinkView: View {
 	
 	let illustrations = [
 		Illustration(id: "d", image: "fruit-cactus", thumbnail: "profile-pic-1", title: "Social Media Today", intro: "What is Social Media and why is it important?."),
@@ -37,7 +37,7 @@ struct IllustrationListDynamicLinkView : View {
 }
 
 #if DEBUG
-struct IllustrationListDynamicLinkView_Previews : PreviewProvider {
+struct IllustrationListDynamicLinkView_Previews: PreviewProvider {
     static var previews: some View {
 		NavigationView {
 			IllustrationListDynamicLinkView()

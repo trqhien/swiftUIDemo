@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct StateDemonstrationView : View {
+struct StateDemonstrationView: View {
 	@State var isCornerRadiusEnable = false
 	
 	var body: some View {
@@ -18,7 +18,7 @@ struct StateDemonstrationView : View {
 				.fontWeight(.bold)
 				.padding()
 				.background(Color.spotify)
-				.cornerRadius(isCornerRadiusEnable ? 20 : 0)
+				.cornerRadius(isCornerRadiusEnable ? 20: 0)
 				.animation(.basic(duration: 0.3, curve: .easeInOut))
 			
 			Spacer()
@@ -34,7 +34,7 @@ struct StateDemonstrationView : View {
 }
 
 #if DEBUG
-struct StateDemonstrationView_Previews : PreviewProvider {
+struct StateDemonstrationView_Previews: PreviewProvider {
     static var previews: some View {
         StateDemonstrationView()
     }

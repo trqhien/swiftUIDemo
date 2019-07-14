@@ -9,7 +9,7 @@
 import SwiftUI
 import UIKit
 
-struct UIViewRepresentableDemonstrationView : View {
+struct UIViewRepresentableDemonstrationView: View {
 	@State private var textInput: String = ""
 	
     var body: some View {
@@ -32,7 +32,7 @@ struct UIViewRepresentableDemonstrationView : View {
 }
 
 #if DEBUG
-struct UIViewRepresentableDemonstrationView_Previews : PreviewProvider {
+struct UIViewRepresentableDemonstrationView_Previews: PreviewProvider {
     static var previews: some View {
 		NavigationView {
 			UIViewRepresentableDemonstrationView()

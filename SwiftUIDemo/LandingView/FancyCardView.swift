@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct FancyCardView : View {
+struct FancyCardView: View {
 	
 	let topic: Topic
 	
@@ -55,7 +55,7 @@ struct FancyCardView : View {
 }
 
 #if DEBUG
-struct FancyCardView_Previews : PreviewProvider {
+struct FancyCardView_Previews: PreviewProvider {
     static var previews: some View {
 		FancyCardView(topic: Topic(id: "abc",
 								   title: "Architech",

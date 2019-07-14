@@ -102,7 +102,7 @@ final class MyUIKitView: UIView {
 }
 
 #if DEBUG
-//struct MyUIKitViewRepresentable_Previews : PreviewProvider {
+//struct MyUIKitViewRepresentable_Previews: PreviewProvider {
 //    static var previews: some View {
 //		@State var input = ""
 //		return MyUIKitViewRepresentable(textInput: $input)

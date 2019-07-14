@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CardView : View {
+struct CardView: View {
 	
 	let topic: Topic
 	
@@ -46,7 +46,7 @@ struct CardView : View {
 }
 
 #if DEBUG
-struct CardView_Previews : PreviewProvider {
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
 			CardView(topic: Topic(id: "1.1",

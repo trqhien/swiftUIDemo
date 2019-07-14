@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-struct BindableObjectDemonstrationView : View {
+struct BindableObjectDemonstrationView: View {
 	@ObjectBinding var style = Style()
 	
 	var body: some View {
@@ -19,7 +19,7 @@ struct BindableObjectDemonstrationView : View {
 				.fontWeight(.bold)
 				.padding()
 				.background(Color.spotify)
-				.cornerRadius(style.isCornerRadiusEnable ? style.cornerRadius : 0)
+				.cornerRadius(style.isCornerRadiusEnable ? style.cornerRadius: 0)
 				.animation(.basic(duration: 0.3, curve: .easeInOut))
 			
 			Spacer()
@@ -31,7 +31,7 @@ struct BindableObjectDemonstrationView : View {
 			}
 			
 			Stepper(value: $style.cornerRadius, in: 5...35, step: 5) {
-				Text("Corner Radius: \(style.isCornerRadiusEnable ? style.cornerRadius : 0, specifier: "%g")")
+				Text("Corner Radius: \(style.isCornerRadiusEnable ? style.cornerRadius: 0, specifier: "%g")")
 					.font(.headline)
 				}
 				.disabled(!style.isCornerRadiusEnable)
@@ -41,7 +41,7 @@ struct BindableObjectDemonstrationView : View {
 }
 
 #if DEBUG
-struct BindableObjectDemonstrationView_Previews : PreviewProvider {
+struct BindableObjectDemonstrationView_Previews: PreviewProvider {
     static var previews: some View {
         BindableObjectDemonstrationView()
     }

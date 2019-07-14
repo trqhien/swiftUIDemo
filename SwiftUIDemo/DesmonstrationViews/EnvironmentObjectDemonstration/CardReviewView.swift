@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CardReviewView : View {
+struct CardReviewView: View {
 	
 	@EnvironmentObject private var cardData: CardData
 	
@@ -22,7 +22,7 @@ struct CardReviewView : View {
 }
 
 #if DEBUG
-struct CardReviewView_Previews : PreviewProvider {
+struct CardReviewView_Previews: PreviewProvider {
     static var previews: some View {
         CardReviewView()
 			.environmentObject(CardData())

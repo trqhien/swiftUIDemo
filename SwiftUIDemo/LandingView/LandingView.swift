@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LandingView : View {
+struct LandingView: View {
 	
 	let viewHierachyTopic = Topic(id: "1.1", title: "Views Hierarchy", tag: "Views & Modifiers", image: "bus-stop", color: "mango")
 	let stateTopic = Topic(id: "1.2", title: "@State", tag: "Data Bindings", image: "ladybug", color: "eggplant")
@@ -87,7 +87,7 @@ struct LandingView : View {
 }
 
 #if DEBUG
-struct LandingView_Previews : PreviewProvider {
+struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
 		ForEach(["iPhone XS Max", "iPhone SE"].identified(by: \.self)) { deviceName in
 			LandingView()

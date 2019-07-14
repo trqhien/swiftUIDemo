@@ -34,7 +34,7 @@ struct IllustrationCell: View {
 }
 
 #if DEBUG
-struct IllustrationCell_Previews : PreviewProvider {
+struct IllustrationCell_Previews: PreviewProvider {
     static var previews: some View {
         IllustrationCell(illustration: Illustration(id: "i", image: "sushi-ramen", thumbnail: "sushi-dribbble", title: "Sushi Facts", intro: "Once upon a time, sushi didn't require a platinum credit card to enjoy. Sushi caught on originally as a cheap, quick snack to eat with the hands while enjoying a theater performance. Forget the popcorn: pass the sushi!."))
     }

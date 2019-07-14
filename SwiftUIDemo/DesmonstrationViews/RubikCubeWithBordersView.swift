@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct RubikCubeWithBordersView : View {
+struct RubikCubeWithBordersView: View {
 	var body: some View {
 		HStack(alignment: .center) {
 			Text("Rubik Cube")
@@ -29,7 +29,7 @@ struct RubikCubeWithBordersView : View {
 }
 
 #if DEBUG
-struct RubikCubeWithBordersView_Previews : PreviewProvider {
+struct RubikCubeWithBordersView_Previews: PreviewProvider {
     static var previews: some View {
         RubikCubeWithBordersView()
     }

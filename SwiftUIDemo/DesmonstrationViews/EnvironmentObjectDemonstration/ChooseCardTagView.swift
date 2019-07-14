@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ChooseCardTagView : View {
+struct ChooseCardTagView: View {
 
 	@EnvironmentObject private var cardData: CardData
 
@@ -41,7 +41,7 @@ struct ChooseCardTagView : View {
 }
 
 #if DEBUG
-struct ChooseCardTagView_Previews : PreviewProvider {
+struct ChooseCardTagView_Previews: PreviewProvider {
     static var previews: some View {
 		NavigationView {
 			ChooseCardTagView()

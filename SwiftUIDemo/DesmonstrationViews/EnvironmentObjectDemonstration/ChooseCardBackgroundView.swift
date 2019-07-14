@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ChooseCardBackgroundView : View {
+struct ChooseCardBackgroundView: View {
 	let backgroundColors = [
 		"banana",
 		"carrot",
@@ -84,7 +84,7 @@ extension String: SelectionManager {
 }
 
 #if DEBUG
-struct ChooseCardBackgroundView_Previews : PreviewProvider {
+struct ChooseCardBackgroundView_Previews: PreviewProvider {
     static var previews: some View {
 		NavigationView {
 			ChooseCardBackgroundView()

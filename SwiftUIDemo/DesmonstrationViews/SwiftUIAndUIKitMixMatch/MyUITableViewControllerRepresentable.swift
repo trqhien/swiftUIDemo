@@ -152,7 +152,7 @@ final class PosterCell: UITableViewCell {
 }
 
 #if DEBUG
-//struct MyUITableViewControllerRepresentable_Previews : PreviewProvider {
+//struct MyUITableViewControllerRepresentable_Previews: PreviewProvider {
 //    static var previews: some View {
 //		NavigationView {
 //			MyUITableViewControllerRepresentable()

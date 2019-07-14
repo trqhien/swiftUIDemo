@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct RubikCubeView : View {
+struct RubikCubeView: View {
 	var body: some View {
 		HStack {
 			Text("Rubik Cube")
@@ -24,7 +24,7 @@ struct RubikCubeView : View {
 }
 
 #if DEBUG
-struct RubikCubeView_Previews : PreviewProvider {
+struct RubikCubeView_Previews: PreviewProvider {
     static var previews: some View {
         RubikCubeView()
     }

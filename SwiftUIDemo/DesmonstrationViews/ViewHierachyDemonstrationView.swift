@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ViewHierachyDemonstrationView : View {
+struct ViewHierachyDemonstrationView: View {
 	@ObjectBinding var style = Style()
 	
 	var body: some View {
@@ -35,7 +35,7 @@ struct ViewHierachyDemonstrationView : View {
 }
 
 #if DEBUG
-struct ViewHierachyDemonstrationView_Previews : PreviewProvider {
+struct ViewHierachyDemonstrationView_Previews: PreviewProvider {
     static var previews: some View {
         ViewHierachyDemonstrationView()
     }

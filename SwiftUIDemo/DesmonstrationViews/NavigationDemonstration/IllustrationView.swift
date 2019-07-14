@@ -22,7 +22,7 @@ struct IllustrationView: View {
 
 
 #if DEBUG
-struct IllustrationView_Previews : PreviewProvider {
+struct IllustrationView_Previews: PreviewProvider {
     static var previews: some View {
         IllustrationView(image: "sushi-ramen")
     }
