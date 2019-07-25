@@ -15,8 +15,9 @@ struct LandingView: View {
 	let bindableObjectTopic = Topic(id: "1.3", title: "BindableObject", tag: "Data Bindings", image: "workflow", color: "potato")
 	let layoutDemonstrationTopic = Topic(id: "1.4", title: "Layout", tag: "Graphic Effects", image: "robot", color: "purpleSweetPotato")
 	let navigationDemonstrationTopic = Topic(id: "1.5", title: "Navigation", tag: "Navigation", image: "biker", color: "cement")
-	let environmentObjectTopic = Topic(id: "1.6", title: "@EnviromentObject", tag: "Indirect Data Binding", image: "dark-sushi", color: "almostDark")
-	let forwardCompatibilityTopic = Topic(id: "1.7", title: "Forward Compatibility", tag: "Mix and match", image: "running", color: "taro")
+	let environmentObjectTopic = Topic(id: "1.6", title: "@EnviromentObject", tag: "Indirect Data Binding", image: "great-heat", color: "mint")
+	let forwardCompatibilityBasicTopic = Topic(id: "1.7", title: "UIViewRepresentable", tag: "Forward Compatibility", image: "work-overtime", color: "darkSkyBlue")
+	let forwardCompatibilityTopic = Topic(id: "1.8", title: "Coordinator", tag: "Forward Compatibility", image: "running", color: "taro")
 	
 	let destination = DynamicNavigationDestinationLink(id: \Topic.id, isDetail: true) { _ in
 		BindableObjectDemonstrationView()
@@ -25,13 +26,14 @@ struct LandingView: View {
 	let sectionTwoTopics = [
 		Topic(id: "2.1", title: "Trumpet", tag: "Musical", image: "trumpet", color: "ink"),
 		Topic(id: "2.2", title: "Rubik", tag: "3D Combination Puzzle", image: "rubik", color: "strawberrySmoothie"),
-		Topic(id: "2.3", title: "Work Overtime", tag: "Lifestyle", image: "work-overtime", color: "ink"),
+		Topic(id: "2.3", title: "Work Overtime", tag: "Lifestyle", image: "online-dating", color: "ink"),
 	]
 	
 	let sectionThreeTopics = [
 		Topic(id: "3.1", title: "Architechture", tag: "UI & UX", image: "architecture", color: "potato"),
-		Topic(id: "3.2", title: "Campfire", tag: "Travel & Lifestyle", image: "campfire", color: "potato"),
-		Topic(id: "3.3", title: "Paddles", tag: "Sports", image: "paddle", color: "potato"),
+		Topic(id: "3.2", title: "Paddles", tag: "Sports", image: "paddle", color: "potato"),
+		Topic(id: "3.3", title: "Campfire", tag: "Travel & Lifestyle", image: "ideal-office", color: "mint"),
+		Topic(id: "3.4", title: "Roadtrip", tag: "Travel & Lifestyle", image: "roadtrip", color: "mint"),
 	]
 
     var body: some View {
@@ -63,6 +65,10 @@ struct LandingView: View {
 							CardView(topic: environmentObjectTopic)
 						}
 						
+						NavigationButton(destination: UIViewRepresentableBasicDemonstrationView()) {
+							CardView(topic: forwardCompatibilityBasicTopic)
+						}
+						
 						NavigationButton(destination: UIViewRepresentableDemonstrationView()) {
 							CardView(topic: forwardCompatibilityTopic)
 						}
@@ -73,13 +79,19 @@ struct LandingView: View {
 					.frame(width: UIScreen.main.bounds.width, height: 320)
 				
 				ForEach(sectionTwoTopics.identified(by: \.id)) { topic in
-					TopicDetailCell(topic: topic)
+					NavigationButton(destination: UnderConstructionView()) {
+						TopicDetailCell(topic: topic)
+							.frame(height: 86)
+					}
 				}
 				
 				ForEach(sectionThreeTopics.identified(by: \.id)) { topic in
-					FancyCardView(topic: topic)
+					NavigationButton(destination: UnderConstructionView()) {
+						FancyCardView(topic: topic)
+							.frame(height: 311)
+					}
 				}
-					.padding(.bottom, 20)
+					.padding([.top, .bottom], -20)
 			}
 				.navigationBarTitle(Text("SwiftUI Demo ✌🏼"))
 		}
@@ -100,5 +112,5 @@ struct LandingView_Previews: PreviewProvider {
 
 // TODO: - Refactor register pattern with AnyView
 // Refactor TextField
-// Finish environment object
 // Section title for LandingView
+// Add more color

@@ -12,31 +12,40 @@ import UIKit
 struct MyUIViewRepresentable: UIViewRepresentable {
 	class Coordinator: NSObject {
 		@Binding var textInput: String
-		
+
 		init(textInput: Binding<String>) {
 			$textInput = textInput
 		}
-		
+
 		@objc func reset(_ sender: UIButton) {
 			textInput = ""
 		}
 	}
-	
+
 	@Binding var textInput: String
-	
+
 	func makeUIView(context: Context) -> MyUIKitView {
 		let uiView = MyUIKitView()
 		uiView.addButtonTarget(context.coordinator, action: #selector(Coordinator.reset(_:)), for: .touchUpInside)
 		return uiView
 	}
-	
+
 	func updateUIView(_ uiView: MyUIKitView, context: Context) {
 		uiView.titleLabel.text = textInput
 	}
-	
+
 	func makeCoordinator() -> MyUIViewRepresentable.Coordinator {
 		return Coordinator(textInput: $textInput)
 	}
+}
+
+struct MyUIViewBasicRepresentable: UIViewRepresentable {
+	
+	func makeUIView(context: Context) -> MyUIKitView {
+		return MyUIKitView()
+	}
+	
+	func updateUIView(_ uiView: MyUIKitView, context: Context) { }
 }
 
 final class MyUIKitView: UIView {

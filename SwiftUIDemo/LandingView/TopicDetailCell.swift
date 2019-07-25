@@ -30,7 +30,7 @@ struct TopicDetailCell: View {
 					.lineLimit(1)
 			}
 		}
-			.padding(.top, 8).padding(.bottom, 8)
+			.padding([.top, .bottom], 8)
     }
 }
 

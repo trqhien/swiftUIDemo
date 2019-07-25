@@ -44,7 +44,6 @@ struct MyUITableViewControllerRepresentable: UIViewControllerRepresentable {
 		"exoskeleton",
 		"fruits-world",
 		"gameboy",
-		"gameboy",
 		"motorbike",
 		"on-the-scooter",
 		"roadtrip",
@@ -65,8 +64,7 @@ struct MyUITableViewControllerRepresentable: UIViewControllerRepresentable {
 	func updateUIViewController(_ uiViewController: MyTableViewController, context: Context) {}
 	
 	func makeCoordinator() -> MyUITableViewControllerRepresentable.Coordinator {
-		let coordinator = Coordinator(self)
-		return coordinator
+		return Coordinator(self)
 	}
 }
 

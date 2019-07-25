@@ -13,6 +13,7 @@
 		2109D5A222D4D8750037508B /* ViewHierachyDemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5A122D4D8750037508B /* ViewHierachyDemonstrationView.swift */; };
 		2109D5A422D506590037508B /* UnderConstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2109D5A322D506590037508B /* UnderConstructionView.swift */; };
 		2111A5C522D2F56A00E85D5E /* Color+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */; };
+		2119F10A22DBB73F002D6103 /* UIViewRepresentableBasicDemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119F10922DBB73F002D6103 /* UIViewRepresentableBasicDemonstrationView.swift */; };
 		211C505A22CF1E4100A643A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505922CF1E4100A643A5 /* AppDelegate.swift */; };
 		211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505B22CF1E4100A643A5 /* SceneDelegate.swift */; };
 		211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211C505D22CF1E4100A643A5 /* ContentView.swift */; };
@@ -60,6 +61,7 @@
 		2109D5A122D4D8750037508B /* ViewHierachyDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHierachyDemonstrationView.swift; sourceTree = "<group>"; };
 		2109D5A322D506590037508B /* UnderConstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderConstructionView.swift; sourceTree = "<group>"; };
 		2111A5C422D2F56A00E85D5E /* Color+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+AppColors.swift"; sourceTree = "<group>"; };
+		2119F10922DBB73F002D6103 /* UIViewRepresentableBasicDemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableBasicDemonstrationView.swift; sourceTree = "<group>"; };
 		211C505622CF1E4100A643A5 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C505922CF1E4100A643A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		211C505B22CF1E4100A643A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				21798A1822D89103007639BA /* UIViewRepresentableDemonstrationView.swift */,
 				21798A1B22D8F568007639BA /* MyUIViewRepresentable.swift */,
 				212B432622D9A0F900723BA5 /* MyUITableViewControllerRepresentable.swift */,
+				2119F10922DBB73F002D6103 /* UIViewRepresentableBasicDemonstrationView.swift */,
 			);
 			path = SwiftUIAndUIKitMixMatch;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				21798A1C22D8F568007639BA /* MyUIViewRepresentable.swift in Sources */,
 				21847D2C22D7256E00008A23 /* CardReviewView.swift in Sources */,
 				21847D2422D724B000008A23 /* ChooseCardTitleView.swift in Sources */,
+				2119F10A22DBB73F002D6103 /* UIViewRepresentableBasicDemonstrationView.swift in Sources */,
 				211C505C22CF1E4100A643A5 /* SceneDelegate.swift in Sources */,
 				21F1225A22D2EF1D0004D8EE /* CardView.swift in Sources */,
 				211C505E22CF1E4100A643A5 /* ContentView.swift in Sources */,

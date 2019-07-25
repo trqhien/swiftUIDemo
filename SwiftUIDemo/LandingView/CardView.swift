@@ -21,7 +21,7 @@ struct CardView: View {
 						.foregroundColor(Color.oceanBlue)
 					
 					Text(topic.title)
-						.font(.title)
+						.font(.headline)
 						.fontWeight(.bold)
 						.color(.primary)
 					}

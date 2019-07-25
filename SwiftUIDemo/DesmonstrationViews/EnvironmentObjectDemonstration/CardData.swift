@@ -32,4 +32,3 @@ final class CardData: BindableObject {
 		self.color = color
 	}
 }
-
